@@ -52,21 +52,21 @@ select {
     padding: 10px;
     margin-bottom: 16px;
 }
-#food{
+#states{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
 }
 
-#food > div {
+#states > div {
     flex-basis: calc(50% - 10px);
 }
 
 /* Tablet/Desktop overrides */
 
 @media(min-width: 681px) {
-    #food > div {
+    #states > div {
         flex-basis: calc(33% - 10px);
     }
 }
