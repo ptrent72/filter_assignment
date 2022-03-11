@@ -40,10 +40,36 @@ select {
     width: 100%;
 }
 
+.item {
+    display: none;
+}
+
+.item.active {
+    display: block;
+}
+
+.filter {
+    padding: 10px;
+    margin-bottom: 16px;
+}
+#food{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#food > div {
+    flex-basis: calc(50% - 10px);
+}
 
 /* Tablet/Desktop overrides */
 
-@media(min-width: 681px) {}
+@media(min-width: 681px) {
+    #food > div {
+        flex-basis: calc(33% - 10px);
+    }
+}
 
 @media(min-width: 729px) {
     /* Any adjustments for desktop and larger go here. Note these styles will be applied to anything 729px or larger -- so desktop */
